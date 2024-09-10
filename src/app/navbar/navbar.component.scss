@@ -81,10 +81,47 @@ header nav a:hover {
     header nav.open {
         top: 0;
     }
+
     
     header nav a {
         display: block;
         margin: 10px 0;
         margin-left: 0;
+    }
+}
+
+
+.loaders {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999999999999999999999999999999;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+}
+
+.loaders.display {
+    display: flex;
+}
+
+.loaders .loading {
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-top: 2px solid #c5aa6a;
+    border-left: 2px solid #c5aa6a;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-radius: 100%;
+    box-shadow: 2px 2px 10px 0 blue;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    100% {
+        transform: rotate(360deg);
     }
 }

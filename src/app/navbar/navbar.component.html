@@ -2,9 +2,9 @@
     <h1 class="logo">DiluarNalar</h1>
 
     <nav>
-        <a href="/">Home</a>
-        <a href="/product">Product</a>
-        <a href="/about">About</a>
+        <a (click)="home()">Home</a>
+        <a (click)="product()">Product</a>
+        <a (click)="about()">About</a>
     </nav>
     <div (click)="click()" class="bx bx-menu" id="menu-icon"></div>
 </header>
@@ -12,4 +12,6 @@
 
 
 
-
+<div class="loaders">
+    <div class="loading"></div>
+</div>
