@@ -1,3 +1,7 @@
+ h3 {
+    color: aliceblue;
+    margin: 20px;
+}
 .card {
     background-color: #5f4c4c;
     margin: 10px;
@@ -24,11 +28,9 @@
     padding: 10px;
 }
 .card .card-title p {
-    margin-bottom: 5px;
-}
-.card .card-title h6 {
     margin-bottom: 10px;
 }
+
 .card .card-title a {
     background-color: lightblue;
     padding: 5px;
