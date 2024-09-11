@@ -27,6 +27,11 @@ header nav a {
     transition: all .2s ease;
 }
 
+.bx-expand {
+    font-size: 20px;
+    cursor: pointer;
+}
+
 header nav a.active {
     border-bottom: 2px solid beige;
 }

@@ -19,6 +19,11 @@ export class NavbarComponent {
     }
 
 
+    fullscreen() {
+      document.body.requestFullscreen();
+    }
+
+
     
     
     constructor(private route: Router ) {
