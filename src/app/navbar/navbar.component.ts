@@ -10,14 +10,22 @@ import { Router } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+    nav: any
     click() {
       document.getElementById("menu-icon")?.classList.toggle("bx-x")
       document.querySelector("nav")?.classList.toggle("open")
       document.querySelector("nav")?.style.removeProperty("overflow")
       
     }
+
+
     
-    constructor(private route: Router) {
+    
+    constructor(private route: Router ) {
+     
+    }
+    
+    init() : void {
       
     }
     
@@ -35,15 +43,24 @@ export class NavbarComponent {
     
     home() {
       this.loading()
+      document.querySelector(".home")?.classList.add("active");
+      document.querySelector(".about")?.classList.remove("active");
+      document.querySelector(".product")?.classList.remove("active");
       this.route.navigate(["/"]);
     }
     
     product() {
       this.loading()
+      document.querySelector(".home")?.classList.remove("active");
+      document.querySelector(".about")?.classList.remove("active");
+      document.querySelector(".product")?.classList.add("active");
       this.route.navigate(["/product"]);
     }
     about() {
       this.loading()
+      document.querySelector(".home")?.classList.remove("active");
+      document.querySelector(".about")?.classList.add("active");
+      document.querySelector(".product")?.classList.remove("active");
       this.route.navigate(["/about"]);
     }
 }

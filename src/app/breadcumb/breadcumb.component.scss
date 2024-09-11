@@ -1,0 +1,24 @@
+.container {
+    margin: 20px;
+    gap: 30px;
+    display: flex;
+}
+
+.container a {
+    color: beige;
+    border: 1px solid beige;
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.container a.active {
+    background-color: beige;
+    color: black;
+}
+
+.container a:hover {
+    background-color: beige;
+    color: black;
+}

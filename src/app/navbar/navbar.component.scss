@@ -22,8 +22,13 @@ header nav a {
     color: beige;
     font-size: 15px;
     font-weight: 600;
+    font-family: "Roboto", sans-serif;
     border-bottom: 2px solid transparent;
     transition: all .2s ease;
+}
+
+header nav a.active {
+    border-bottom: 2px solid beige;
 }
 
 header nav {
@@ -68,10 +73,10 @@ header nav a:hover {
         right: 0;
         width: 100%;
         z-index: -1;
-        height: 200px;
+        height: 150px;
+        align-items: center;
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-around;
         padding: 40px 20px;
         background-color: rgba(0, 0, 0, 0.7);

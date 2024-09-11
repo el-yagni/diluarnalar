@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { BreadcumbComponent } from "../breadcumb/breadcumb.component";
 
 @Component({
-  selector: 'app-product',
+  selector: 'app-game',
   standalone: true,
   imports: [BreadcumbComponent],
-  templateUrl: './product.component.html',
-  styleUrl: './product.component.scss'
+  templateUrl: './game.component.html',
+  styleUrl: './game.component.scss'
 })
-export class ProductComponent {
+export class GameComponent {
 
 }
