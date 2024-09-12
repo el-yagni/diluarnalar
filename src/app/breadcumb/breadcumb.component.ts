@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-breadcumb',
   standalone: true,
-  imports: [],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './breadcumb.component.html',
   styleUrl: './breadcumb.component.scss'
 })
@@ -14,14 +14,10 @@ export class BreadcumbComponent {
   }
 
   apps() {
-    document.querySelector(".apps")?.classList.add("active");
-    document.querySelector(".game")?.classList.remove("active");
     this.route.navigate(['/product'])
   }
   
   game() {
-    document.querySelector(".apps")?.classList.remove("active");
-    document.querySelector(".game")?.classList.add("active");
     this.route.navigate(['/product/game'])
   }
 }

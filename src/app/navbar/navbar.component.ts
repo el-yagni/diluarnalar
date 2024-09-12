@@ -17,10 +17,11 @@ export class NavbarComponent {
       document.querySelector("nav")?.style.removeProperty("overflow")
       
     }
-
-
+    
+    
     fullscreen() {
       document.body.requestFullscreen();
+      document.querySelector("bx-expand")?.classList.toggle("bx-minimize")
     }
 
 
