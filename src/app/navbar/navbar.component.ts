@@ -19,14 +19,6 @@ export class NavbarComponent {
     }
     
     
-    fullscreen() {
-      document.body.requestFullscreen();
-      document.querySelector("bx-expand")?.classList.toggle("bx-minimize")
-    }
-
-
-    
-    
     constructor(private route: Router ) {
      
     }
